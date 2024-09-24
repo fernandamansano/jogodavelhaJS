@@ -118,3 +118,7 @@ function reiniciarJogo() {
         location.reload(); //Recarrega a página
     }, 1000);
 }
+
+document.getElementById("botaoSair").addEventListener("click", function() {
+    window.location.href = "index.html";
+});
