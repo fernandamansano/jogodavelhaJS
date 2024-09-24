@@ -19,15 +19,18 @@
                 <button cell-i="8"> </button>
                 <button cell-i="9"> </button>  
             </div>
-            <h2 class="vezPlayer"></h2>
+            <h2 id="vezPlayer"></h2>
 
-            <div class="messagem-vencer">
-                <p>Player venceu!</p>
-                <button>Reiniciar</button>
+            <div id="resultadoJogo" class="resultadoJogo">
+                <div class="msg-content">
+                    <span class="fechar-msg" onclick="fecharMsg()">&times;</span>
+                    <p id="msg-resultado"></p><br>
+                    <button onclick="reiniciarJogo()">Reiniciar</button>
+                </div>
             </div>
+            
         </section>
         
-    
         <script src="script.js"></script>
     </body>
 </html>
