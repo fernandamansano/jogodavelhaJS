@@ -60,7 +60,7 @@ function iniciarJogo() {
 document.addEventListener("DOMContentLoaded", iniciarJogo);
 
 function newMove(e) {
-    const index = e.target.getAttribute("cell-i");
+    const index = e.target.getAttribute("data-i");
     e.target.innerHTML = player;
     e.target.removeEventListener("click", newMove);
     selected[index] = player;
